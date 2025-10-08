@@ -15,8 +15,7 @@ form.addEventListener("submit",(e)=>{
 	let td4=document.createElement("td");
 	let button=document.createElement("button");
 	button.innerText="X";
-	button.style.color="white";
-	button.style.backgroundColor="red";
+	button.className="delete";
 	button.addEventListener("click",(e)=>{
 		let itsParent=e.target.parentNode.parentNode;
 		itsParent.remove();
@@ -25,4 +24,5 @@ form.addEventListener("submit",(e)=>{
 	tr.append(td1,td2,td3,td4);
 	tbody.appendChild(tr);
 	count+=1;
+	e.target.reset();
 })
