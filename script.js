@@ -1,6 +1,6 @@
 //your JS code here. If required.
 const form=document.querySelector("form");
-const tbody=document.getElementsById("book-list");
+const tbody=document.getElementById("book-list");
 let count=1;
 form.addEventListener("submit",(e)=>{
 	e.preventDefault();
